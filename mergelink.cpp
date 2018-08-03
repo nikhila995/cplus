@@ -7,22 +7,22 @@ struct node* next;
 };
 class linkedd
 {
-	struct node *L1;
-	struct node *L2;
-	struct node *L3;
+	struct node *L1;  //first linked list
+	struct node *L2;	//second linked list
+	struct node *L3;	//resultant merged linked list
 	public:
-	void inbeg1(int);
-	void inbeg2(int);
+	void inbeg1(int);	//add elements at begining in list1
+	void inbeg2(int);	//add elements at begining in list2
 	void display(struct node*);
-	void print1();
-	void print2();
+	void print1();	//print elements  in list1
+	void print2();	//print elements  in list2	
 	void merge(int,int);
-	void print3();
+	void print3();	//print elements of resultant list3
 	linkedd();
 	//~linkedd();
 };
 /*constructor!!!!!!!*/
-linkedd::linkedd()
+linkedd::linkedd()	// initialize lists
 {
 L1=NULL;
 L2=NULL;
